@@ -13,6 +13,7 @@ class DetailsView: UIView {
     lazy var romajiText = UILabel()
     lazy var typeText = UILabel()
     lazy var container = UIView()
+    lazy var closeButton = UIButton()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -27,15 +28,8 @@ class DetailsView: UIView {
     }
     
     @objc func dismissView(){
-        UIView.animate(withDuration: 0.6, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: .curveEaseInOut) { [weak self] in
-            self?.container.transform = CGAffineTransform(translationX: 0, y: (self?.frame.height ?? 0))
-            self?.backgroundColor = .none
-        } completion: { [weak self] (success) in
-            if success {
-                self?.subviews.forEach{ $0.removeFromSuperview() }
-                self?.removeFromSuperview()
-            }
-        }
+        subviews.forEach{ $0.removeFromSuperview() }
+        removeFromSuperview()
     }
     
     @objc func animateView(){
@@ -55,6 +49,9 @@ extension DetailsView {
         container.layer.borderColor = UIColor.placeholderText.cgColor
         container.layer.cornerRadius = 20
         container.backgroundColor = .systemBackground
+        closeButton.setImage(UIImage(systemName: "xmark"), for: .normal)
+        closeButton.tintColor = .gris
+        closeButton.addTarget(self, action: #selector(dismissView), for: .touchDown)
         kanaText.font = UIFont.systemFont(ofSize: 70)
         kanaText.textColor = .gris
         romajiText.font = UIFont.systemFont(ofSize: 40)
@@ -65,17 +62,22 @@ extension DetailsView {
         container.addSubview(kanaText)
         container.addSubview(romajiText)
         container.addSubview(typeText)
+        container.addSubview(closeButton)
     }
     func setLayout(){
         container.translatesAutoresizingMaskIntoConstraints = false
         kanaText.translatesAutoresizingMaskIntoConstraints = false
         romajiText.translatesAutoresizingMaskIntoConstraints = false
         typeText.translatesAutoresizingMaskIntoConstraints = false
+        closeButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             container.centerXAnchor.constraint(equalTo: centerXAnchor),
             container.bottomAnchor.constraint(equalTo: bottomAnchor),
             container.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 1),
             container.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.35),
+            
+            closeButton.leadingAnchor.constraint(equalTo: container.safeAreaLayoutGuide.leadingAnchor, constant: 15),
+            closeButton.topAnchor.constraint(equalTo: container.topAnchor, constant: 15),
             
             kanaText.centerXAnchor.constraint(equalTo: container.centerXAnchor),
             kanaText.topAnchor.constraint(equalTo: container.topAnchor, constant: 30),
@@ -84,7 +86,7 @@ extension DetailsView {
             romajiText.topAnchor.constraint(equalTo: kanaText.bottomAnchor, constant: 20),
             
             typeText.centerXAnchor.constraint(equalTo: container.centerXAnchor),
-            typeText.topAnchor.constraint(equalTo: romajiText.bottomAnchor, constant: 25)
+            typeText.topAnchor.constraint(equalTo: romajiText.bottomAnchor, constant: 25),
         ])
     }
 }
