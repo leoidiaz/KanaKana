@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,6 +34,7 @@
 		29F887A1257B040800B9F01B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F8879F257B040800B9F01B /* NetworkManager.swift */; };
 		29F887A2257B040800B9F01B /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F887A0257B040800B9F01B /* PersistenceManager.swift */; };
 		29F887A6257B041800B9F01B /* confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = 29F887A5257B041800B9F01B /* confetti.json */; };
+		29F887AF257B110900B9F01B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 29F887AE257B110900B9F01B /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29F887AF257B110900B9F01B /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +233,9 @@
 			dependencies = (
 			);
 			name = KanaKana;
+			packageProductDependencies = (
+				29F887AE257B110900B9F01B /* Lottie */,
+			);
 			productName = KanaKana;
 			productReference = 29C2BE462579D1820063170C /* KanaKana.app */;
 			productType = "com.apple.product-type.application";
@@ -280,6 +285,9 @@
 				Base,
 			);
 			mainGroup = 29C2BE3D2579D1810063170C;
+			packageReferences = (
+				29F887AD257B110900B9F01B /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 29C2BE472579D1820063170C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -600,6 +608,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		29F887AD257B110900B9F01B /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 3.1.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		29F887AE257B110900B9F01B /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29F887AD257B110900B9F01B /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 29C2BE3E2579D1820063170C /* Project object */;
 }
