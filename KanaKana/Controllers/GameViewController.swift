@@ -15,7 +15,7 @@ class GameViewController: UIViewController {
     var mode: Modes!
     let progress = Progress(totalUnitCount: 10)
     let hiraganaManager = HiraganaManager.shared
-    let persistenceManager = PersistenceManager.shared
+    var persistenceManager: PersistenceManager?
     lazy var score = 0 {
         didSet{
             gameView.scoreLabel.text = score.asString()
@@ -154,26 +154,26 @@ extension GameViewController {
     }
     
     private func checkHighScore(difficulty: Modes){
-        if let highScore = persistenceManager.scores {
+        if let highScore = persistenceManager?.scores {
             switch difficulty {
             case .easy:
                 if score > highScore.easy {
-                    persistenceManager.updateScore(difficulty: .easy, from: score)
+                    persistenceManager?.updateScore(difficulty: .easy, from: score)
                     newHighScore()
                 }
             case .medium:
                 if score > highScore.medium {
-                    persistenceManager.updateScore(difficulty: .medium, from: score)
+                    persistenceManager?.updateScore(difficulty: .medium, from: score)
                     newHighScore()
                 }
             case .hard:
                 if score > highScore.hard {
-                    persistenceManager.updateScore(difficulty: .hard, from: score)
+                    persistenceManager?.updateScore(difficulty: .hard, from: score)
                     newHighScore()
                 }
             }
         } else {
-            persistenceManager.createHighScore(newScore: score, difficulty: difficulty)
+            persistenceManager?.createHighScore(newScore: score, difficulty: difficulty)
             newHighScore()
         }
     }
