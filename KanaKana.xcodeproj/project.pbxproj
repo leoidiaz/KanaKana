@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		294D93F1257B2AD300505329 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294D93F0257B2AD300505329 /* GameViewController.swift */; };
 		299BC9F0257B013200FCBBAA /* AnswersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BC9E9257B013100FCBBAA /* AnswersView.swift */; };
 		299BC9F1257B013200FCBBAA /* HeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BC9EA257B013100FCBBAA /* HeaderReusableView.swift */; };
 		299BC9F2257B013200FCBBAA /* HighScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BC9EB257B013100FCBBAA /* HighScoreView.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		294D93F0257B2AD300505329 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		299BC9E9257B013100FCBBAA /* AnswersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswersView.swift; sourceTree = "<group>"; };
 		299BC9EA257B013100FCBBAA /* HeaderReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderReusableView.swift; sourceTree = "<group>"; };
 		299BC9EB257B013100FCBBAA /* HighScoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoreView.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				299BCA03257B01AD00FCBBAA /* HighScoreViewController.swift */,
 				299BCA02257B01AD00FCBBAA /* ReviewViewController.swift */,
 				29D640C9257AE6DE00AB6F19 /* HiraganaViewController.swift */,
+				294D93F0257B2AD300505329 /* GameViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				299BC9F5257B013200FCBBAA /* GameView.swift in Sources */,
 				299BC9F6257B013200FCBBAA /* HiraganaCollectionViewCell.swift in Sources */,
 				299BC9F1257B013200FCBBAA /* HeaderReusableView.swift in Sources */,
+				294D93F1257B2AD300505329 /* GameViewController.swift in Sources */,
 				299BCA04257B01AD00FCBBAA /* DetailsViewController.swift in Sources */,
 				29C2BE4C2579D1820063170C /* SceneDelegate.swift in Sources */,
 				299BCA0B257B01BB00FCBBAA /* Modes.swift in Sources */,
