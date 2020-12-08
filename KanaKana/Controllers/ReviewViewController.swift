@@ -15,7 +15,7 @@ class ReviewViewController: UIViewController {
     //MARK: - Properties
     lazy var gameStartView = GameStartView(frame: view.frame)
     var mode: Modes = .easy
-    let persistenceManager = PersistenceManager.shared
+    let persistenceManager = PersistenceManager()
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,6 +74,7 @@ extension ReviewViewController {
         let destinationVC = GameViewController()
         destinationVC.mode = mode
         destinationVC.delegate = self
+        destinationVC.persistenceManager = persistenceManager
         destinationVC.modalPresentationStyle = .overFullScreen
         present(destinationVC, animated: false)
     }
