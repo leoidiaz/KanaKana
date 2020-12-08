@@ -27,17 +27,14 @@ class PersistenceManager {
         saveToPersistence()
     }
     
-    func updateScore(current: HighScore, difficulty: Modes, from score: Int){
+    func updateScore(difficulty: Modes, from score: Int){
         switch difficulty{
         case .easy:
-            guard score > current.easy else { return }
-            current.easy = score
+            scores?.easy = score
         case .medium:
-            guard score > current.medium else { return }
-            current.medium = score
+            scores?.medium = score
         case .hard:
-            guard score > current.hard else { return }
-            current.hard = score
+            scores?.hard = score
         }
         saveToPersistence()
     }
