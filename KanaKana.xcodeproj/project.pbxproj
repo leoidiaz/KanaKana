@@ -32,6 +32,7 @@
 		29D640C4257AE23A00AB6F19 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D640C3257AE23A00AB6F19 /* Extensions.swift */; };
 		29D640CA257AE6DE00AB6F19 /* HiraganaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D640C9257AE6DE00AB6F19 /* HiraganaViewController.swift */; };
 		29D640CF257AE7ED00AB6F19 /* HiraganaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D640CE257AE7ED00AB6F19 /* HiraganaManager.swift */; };
+		29EE62CE25804C290079EAFD /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EE62CD25804C290079EAFD /* Data+Extension.swift */; };
 		29F887A1257B040800B9F01B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F8879F257B040800B9F01B /* NetworkManager.swift */; };
 		29F887A2257B040800B9F01B /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F887A0257B040800B9F01B /* PersistenceManager.swift */; };
 		29F887A6257B041800B9F01B /* confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = 29F887A5257B041800B9F01B /* confetti.json */; };
@@ -78,6 +79,7 @@
 		29D640C3257AE23A00AB6F19 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		29D640C9257AE6DE00AB6F19 /* HiraganaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaViewController.swift; sourceTree = "<group>"; };
 		29D640CE257AE7ED00AB6F19 /* HiraganaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaManager.swift; sourceTree = "<group>"; };
+		29EE62CD25804C290079EAFD /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		29F8879F257B040800B9F01B /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		29F887A0257B040800B9F01B /* PersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		29F887A5257B041800B9F01B /* confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = confetti.json; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				299BCA0A257B01BB00FCBBAA /* KanaErrors.swift */,
 				299BCA09257B01BB00FCBBAA /* Modes.swift */,
 				29D640C3257AE23A00AB6F19 /* Extensions.swift */,
+				29EE62CD25804C290079EAFD /* Data+Extension.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				294D93F1257B2AD300505329 /* GameViewController.swift in Sources */,
 				299BCA04257B01AD00FCBBAA /* DetailsViewController.swift in Sources */,
 				29C2BE4C2579D1820063170C /* SceneDelegate.swift in Sources */,
+				29EE62CE25804C290079EAFD /* Data+Extension.swift in Sources */,
 				299BCA0B257B01BB00FCBBAA /* Modes.swift in Sources */,
 				299BC9F2257B013200FCBBAA /* HighScoreView.swift in Sources */,
 				299BCA05257B01AD00FCBBAA /* ReviewViewController.swift in Sources */,
