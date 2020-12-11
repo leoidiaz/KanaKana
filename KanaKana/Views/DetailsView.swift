@@ -45,8 +45,6 @@ class DetailsView: UIView {
 extension DetailsView {
     func setupView(){
         backgroundColor = .placeholderText
-        container.layer.borderWidth = 5
-        container.layer.borderColor = UIColor.placeholderText.cgColor
         container.layer.cornerRadius = 20
         container.backgroundColor = .systemBackground
         closeButton.setImage(UIImage(systemName: "xmark"), for: .normal)
@@ -74,7 +72,7 @@ extension DetailsView {
             container.centerXAnchor.constraint(equalTo: centerXAnchor),
             container.bottomAnchor.constraint(equalTo: bottomAnchor),
             container.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 1),
-            container.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.35),
+            container.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.4),
             
             closeButton.leadingAnchor.constraint(equalTo: container.safeAreaLayoutGuide.leadingAnchor, constant: 15),
             closeButton.topAnchor.constraint(equalTo: container.topAnchor, constant: 15),
@@ -83,7 +81,7 @@ extension DetailsView {
             kanaText.topAnchor.constraint(equalTo: container.topAnchor, constant: 30),
             
             romajiText.centerXAnchor.constraint(equalTo: container.centerXAnchor),
-            romajiText.topAnchor.constraint(equalTo: kanaText.bottomAnchor, constant: 20),
+            romajiText.topAnchor.constraint(equalTo: kanaText.bottomAnchor, constant: 25),
             
             typeText.centerXAnchor.constraint(equalTo: container.centerXAnchor),
             typeText.topAnchor.constraint(equalTo: romajiText.bottomAnchor, constant: 25),
