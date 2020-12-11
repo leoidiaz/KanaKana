@@ -164,7 +164,7 @@ extension HiraganaViewController {
         } else {
             collectionView.collectionViewLayout = layoutCollectionView(sender: false)
         }
-        applySnapshot()
+        applySnapshot(animatingDifferences: false)
     }
 }
 
