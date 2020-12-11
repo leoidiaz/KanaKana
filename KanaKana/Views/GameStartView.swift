@@ -27,7 +27,10 @@ class GameStartView: UIView {
 }
 extension GameStartView {
     private func setUpView(){
-        highscoreLabel.font = UIFont.systemFont(ofSize: 30)
+        highscoreLabel.font = UIFont.systemFont(
+            ofSize: UIFont.preferredFont(forTextStyle: .largeTitle).pointSize,
+            weight: .regular)
+        highscoreLabel.adjustsFontForContentSizeCategory = true
         highscoreLabel.text = "Highscore:"
         scoreLabel.font = UIFont.systemFont(ofSize: 100)
         difficultyDescription.font = UIFont.systemFont(ofSize: 20)
