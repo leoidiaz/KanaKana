@@ -40,7 +40,7 @@ class HiraganaCollectionViewCell: UICollectionViewCell {
     private func setupCell(){
         guard let hira = hiragana else { return }
         addSubview(kanaText)
-        kanaText.font = UIFont.systemFont(ofSize: 25)
+        kanaText.font = UIFont.systemFont(ofSize: 30)
         kanaText.text = hira.kana
         kanaText.textColor = .label
         backgroundColor = .systemBackground

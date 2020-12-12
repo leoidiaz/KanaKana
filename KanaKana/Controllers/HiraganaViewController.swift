@@ -40,6 +40,37 @@ class HiraganaViewController: UIViewController {
             }
         }
     }
+    private func layout(){
+        filterSegment.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            filterSegment.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            filterSegment.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15),
+            collectionView.topAnchor.constraint(equalTo: filterSegment.bottomAnchor, constant: 10),
+            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+        ])
+    }
+}
+    //MARK: - CollectionView Methods
+extension HiraganaViewController: UICollectionViewDelegate {
+    
+    private func configCollectionView(){
+        let layout = layoutCollectionView(sender: true)
+        collectionView = UICollectionView(frame: view.frame, collectionViewLayout: layout)
+        collectionView.register(HeaderReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: HeaderReusableView.reuseIdentifier)
+        collectionView.register(HiraganaCollectionViewCell.self, forCellWithReuseIdentifier: "collectionCell")
+        collectionView.delegate = self
+        collectionView.backgroundColor = .systemBackground
+        view.addSubview(collectionView!)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let kana = dataSource.itemIdentifier(for: indexPath) else { return }
+        showDetails(kana)
+    }
+    
     
     private func makeDataSource() -> DataSource {
         let dataSource = DataSource(collectionView: collectionView, cellProvider: { (collectionView, indexPath, hiragana) -> UICollectionViewCell? in
@@ -71,36 +102,6 @@ class HiraganaViewController: UIViewController {
         dataSource.apply(snapshot, animatingDifferences: animatingDifferences)
     }
     
-    private func layout(){
-        filterSegment.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            filterSegment.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            filterSegment.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15),
-            collectionView.topAnchor.constraint(equalTo: filterSegment.bottomAnchor, constant: 10),
-            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
-        ])
-    }
-}
-
-extension HiraganaViewController: UICollectionViewDelegate {
-    
-    private func configCollectionView(){
-        let layout = layoutCollectionView(sender: true)
-        collectionView = UICollectionView(frame: view.frame, collectionViewLayout: layout)
-        collectionView.register(HeaderReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: HeaderReusableView.reuseIdentifier)
-        collectionView.register(HiraganaCollectionViewCell.self, forCellWithReuseIdentifier: "collectionCell")
-        collectionView.delegate = self
-        collectionView.backgroundColor = .systemBackground
-        view.addSubview(collectionView!)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let kana = dataSource.itemIdentifier(for: indexPath) else { return }
-        showDetails(kana)
-    }
 
     func layoutCollectionView(sender: Bool) -> UICollectionViewLayout {
         if sender {
@@ -143,7 +144,7 @@ extension HiraganaViewController: UICollectionViewDelegate {
         }
     }
 }
-
+    //MARK: - Segmented Controller Methods
 extension HiraganaViewController {
     private func configFilterSegment(){
         let segmentItems = ["All", "Types"]
@@ -163,11 +164,11 @@ extension HiraganaViewController {
         } else {
             collectionView.collectionViewLayout = layoutCollectionView(sender: false)
         }
-        applySnapshot()
+        applySnapshot(animatingDifferences: false)
     }
 }
 
-
+    //MARK: - Show Details
 extension HiraganaViewController {
     private func showDetails(_ kana: Hiragana){
         let detailsView = DetailsView()
