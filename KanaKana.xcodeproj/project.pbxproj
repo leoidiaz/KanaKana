@@ -25,6 +25,7 @@
 		299BCA0C257B01BB00FCBBAA /* KanaErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BCA0A257B01BB00FCBBAA /* KanaErrors.swift */; };
 		299FE5E72581CEAD00297A7F /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299FE5E62581CEAD00297A7F /* UIButton+Extension.swift */; };
 		299FE5EB2581CED600297A7F /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299FE5EA2581CED600297A7F /* UIStackView+Extension.swift */; };
+		29A2E1C6258AB74C0085819B /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2E1C5258AB74C0085819B /* Int+Extension.swift */; };
 		29C2BE4A2579D1820063170C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C2BE492579D1820063170C /* AppDelegate.swift */; };
 		29C2BE4C2579D1820063170C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C2BE4B2579D1820063170C /* SceneDelegate.swift */; };
 		29C2BE532579D1840063170C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29C2BE522579D1840063170C /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		299BCA0A257B01BB00FCBBAA /* KanaErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KanaErrors.swift; sourceTree = "<group>"; };
 		299FE5E62581CEAD00297A7F /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		299FE5EA2581CED600297A7F /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		29A2E1C5258AB74C0085819B /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		29C2BE462579D1820063170C /* KanaKana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanaKana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C2BE492579D1820063170C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29C2BE4B2579D1820063170C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				29EE62CD25804C290079EAFD /* Data+Extension.swift */,
 				299FE5E62581CEAD00297A7F /* UIButton+Extension.swift */,
 				299FE5EA2581CED600297A7F /* UIStackView+Extension.swift */,
+				29A2E1C5258AB74C0085819B /* Int+Extension.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				299BCA0C257B01BB00FCBBAA /* KanaErrors.swift in Sources */,
 				29F887A2257B040800B9F01B /* PersistenceManager.swift in Sources */,
 				29D640C4257AE23A00AB6F19 /* Extensions.swift in Sources */,
+				29A2E1C6258AB74C0085819B /* Int+Extension.swift in Sources */,
 				299BC9F5257B013200FCBBAA /* GameView.swift in Sources */,
 				299BC9F6257B013200FCBBAA /* HiraganaCollectionViewCell.swift in Sources */,
 				299BC9F1257B013200FCBBAA /* HeaderReusableView.swift in Sources */,
