@@ -72,7 +72,7 @@ extension GameStartView {
             
             difficultyDescription.topAnchor.constraint(equalToSystemSpacingBelow: difficultyControl.bottomAnchor, multiplier: 5.0),
             difficultyDescription.centerXAnchor.constraint(equalTo: centerXAnchor),
-            difficultyDescription.widthAnchor.constraint(equalToConstant: frame.width - 100)
+            difficultyDescription.widthAnchor.constraint(equalToConstant: frame.width)
         ])
     }
 }
