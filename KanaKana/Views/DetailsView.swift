@@ -50,11 +50,11 @@ extension DetailsView {
         closeButton.setImage(UIImage(systemName: "xmark"), for: .normal)
         closeButton.tintColor = .gris
         closeButton.addTarget(self, action: #selector(dismissView), for: .touchDown)
-        kanaText.font = UIFont.systemFont(ofSize: 70)
+        kanaText.font = UIFont.systemFont(ofSize: 75)
         kanaText.textColor = .gris
-        romajiText.font = UIFont.systemFont(ofSize: 40)
+        romajiText.font = UIFont.systemFont(ofSize: 45)
         romajiText.textColor = .gris
-        typeText.font = UIFont.systemFont(ofSize: 25)
+        typeText.font = UIFont.systemFont(ofSize: 30)
         typeText.textColor = .placeholderText
         addSubview(container)
         container.addSubview(kanaText)

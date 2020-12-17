@@ -23,13 +23,18 @@
 		299BCA06257B01AD00FCBBAA /* HighScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BCA03257B01AD00FCBBAA /* HighScoreViewController.swift */; };
 		299BCA0B257B01BB00FCBBAA /* Modes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BCA09257B01BB00FCBBAA /* Modes.swift */; };
 		299BCA0C257B01BB00FCBBAA /* KanaErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BCA0A257B01BB00FCBBAA /* KanaErrors.swift */; };
+		299FE5E72581CEAD00297A7F /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299FE5E62581CEAD00297A7F /* UIButton+Extension.swift */; };
+		299FE5EB2581CED600297A7F /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299FE5EA2581CED600297A7F /* UIStackView+Extension.swift */; };
+		29A2E1C6258AB74C0085819B /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2E1C5258AB74C0085819B /* Int+Extension.swift */; };
+		29A2E1D0258AB79C0085819B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2E1CF258AB79C0085819B /* UIColor+Extension.swift */; };
+		29A2E1D4258AB7EE0085819B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2E1D3258AB7EE0085819B /* UIView+Extension.swift */; };
+		29A2E1D8258AB84D0085819B /* UITabBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2E1D7258AB84D0085819B /* UITabBar+Extension.swift */; };
 		29C2BE4A2579D1820063170C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C2BE492579D1820063170C /* AppDelegate.swift */; };
 		29C2BE4C2579D1820063170C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C2BE4B2579D1820063170C /* SceneDelegate.swift */; };
 		29C2BE532579D1840063170C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29C2BE522579D1840063170C /* Assets.xcassets */; };
 		29C2BE562579D1840063170C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29C2BE542579D1840063170C /* LaunchScreen.storyboard */; };
 		29C2BE612579D1840063170C /* KanaKanaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C2BE602579D1840063170C /* KanaKanaTests.swift */; };
 		29D640C0257AE1FA00AB6F19 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29D640BF257AE1FA00AB6F19 /* Colors.xcassets */; };
-		29D640C4257AE23A00AB6F19 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D640C3257AE23A00AB6F19 /* Extensions.swift */; };
 		29D640CA257AE6DE00AB6F19 /* HiraganaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D640C9257AE6DE00AB6F19 /* HiraganaViewController.swift */; };
 		29D640CF257AE7ED00AB6F19 /* HiraganaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D640CE257AE7ED00AB6F19 /* HiraganaManager.swift */; };
 		29EE62CE25804C290079EAFD /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EE62CD25804C290079EAFD /* Data+Extension.swift */; };
@@ -66,6 +71,12 @@
 		299BCA03257B01AD00FCBBAA /* HighScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoreViewController.swift; sourceTree = "<group>"; };
 		299BCA09257B01BB00FCBBAA /* Modes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Modes.swift; sourceTree = "<group>"; };
 		299BCA0A257B01BB00FCBBAA /* KanaErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KanaErrors.swift; sourceTree = "<group>"; };
+		299FE5E62581CEAD00297A7F /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		299FE5EA2581CED600297A7F /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		29A2E1C5258AB74C0085819B /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		29A2E1CF258AB79C0085819B /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		29A2E1D3258AB7EE0085819B /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		29A2E1D7258AB84D0085819B /* UITabBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+Extension.swift"; sourceTree = "<group>"; };
 		29C2BE462579D1820063170C /* KanaKana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanaKana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C2BE492579D1820063170C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29C2BE4B2579D1820063170C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,7 +87,6 @@
 		29C2BE602579D1840063170C /* KanaKanaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanaKanaTests.swift; sourceTree = "<group>"; };
 		29C2BE622579D1840063170C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29D640BF257AE1FA00AB6F19 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		29D640C3257AE23A00AB6F19 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		29D640C9257AE6DE00AB6F19 /* HiraganaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaViewController.swift; sourceTree = "<group>"; };
 		29D640CE257AE7ED00AB6F19 /* HiraganaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaManager.swift; sourceTree = "<group>"; };
 		29EE62CD25804C290079EAFD /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
@@ -149,9 +159,9 @@
 				29D640BE257ADF7C00AB6F19 /* Model */,
 				29D640B9257ADF6800AB6F19 /* Views */,
 				29D640BA257ADF6D00AB6F19 /* Controllers */,
+				296854E3257AADB5002D2B05 /* App */,
 				29D640CD257AE7CD00AB6F19 /* Managers */,
 				29D640BD257ADF7600AB6F19 /* Utility */,
-				296854E3257AADB5002D2B05 /* App */,
 				296854E5257AADD8002D2B05 /* Assets */,
 			);
 			path = KanaKana;
@@ -172,9 +182,9 @@
 				299BC9E9257B013100FCBBAA /* AnswersView.swift */,
 				299BC9EC257B013100FCBBAA /* DetailsView.swift */,
 				299BC9ED257B013100FCBBAA /* GameStartView.swift */,
+				299BC9EB257B013100FCBBAA /* HighScoreView.swift */,
 				299BC9EE257B013200FCBBAA /* GameView.swift */,
 				299BC9EA257B013100FCBBAA /* HeaderReusableView.swift */,
-				299BC9EB257B013100FCBBAA /* HighScoreView.swift */,
 				299BC9EF257B013200FCBBAA /* HiraganaCollectionViewCell.swift */,
 			);
 			path = Views;
@@ -197,8 +207,13 @@
 			children = (
 				299BCA0A257B01BB00FCBBAA /* KanaErrors.swift */,
 				299BCA09257B01BB00FCBBAA /* Modes.swift */,
-				29D640C3257AE23A00AB6F19 /* Extensions.swift */,
 				29EE62CD25804C290079EAFD /* Data+Extension.swift */,
+				299FE5E62581CEAD00297A7F /* UIButton+Extension.swift */,
+				299FE5EA2581CED600297A7F /* UIStackView+Extension.swift */,
+				29A2E1C5258AB74C0085819B /* Int+Extension.swift */,
+				29A2E1CF258AB79C0085819B /* UIColor+Extension.swift */,
+				29A2E1D3258AB7EE0085819B /* UIView+Extension.swift */,
+				29A2E1D7258AB84D0085819B /* UITabBar+Extension.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -331,16 +346,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				29C2BE4A2579D1820063170C /* AppDelegate.swift in Sources */,
+				29A2E1D4258AB7EE0085819B /* UIView+Extension.swift in Sources */,
 				299BC9F4257B013200FCBBAA /* GameStartView.swift in Sources */,
 				299BC9FD257B01A000FCBBAA /* Hiragana.swift in Sources */,
 				29F887A1257B040800B9F01B /* NetworkManager.swift in Sources */,
 				29D640CA257AE6DE00AB6F19 /* HiraganaViewController.swift in Sources */,
 				299BC9FC257B01A000FCBBAA /* HighScore.swift in Sources */,
 				299BC9FE257B01A000FCBBAA /* Type.swift in Sources */,
+				29A2E1D0258AB79C0085819B /* UIColor+Extension.swift in Sources */,
 				299BC9F3257B013200FCBBAA /* DetailsView.swift in Sources */,
+				299FE5E72581CEAD00297A7F /* UIButton+Extension.swift in Sources */,
 				299BCA0C257B01BB00FCBBAA /* KanaErrors.swift in Sources */,
 				29F887A2257B040800B9F01B /* PersistenceManager.swift in Sources */,
-				29D640C4257AE23A00AB6F19 /* Extensions.swift in Sources */,
+				29A2E1C6258AB74C0085819B /* Int+Extension.swift in Sources */,
 				299BC9F5257B013200FCBBAA /* GameView.swift in Sources */,
 				299BC9F6257B013200FCBBAA /* HiraganaCollectionViewCell.swift in Sources */,
 				299BC9F1257B013200FCBBAA /* HeaderReusableView.swift in Sources */,
@@ -351,7 +369,9 @@
 				299BCA0B257B01BB00FCBBAA /* Modes.swift in Sources */,
 				299BC9F2257B013200FCBBAA /* HighScoreView.swift in Sources */,
 				299BCA05257B01AD00FCBBAA /* ReviewViewController.swift in Sources */,
+				29A2E1D8258AB84D0085819B /* UITabBar+Extension.swift in Sources */,
 				299BC9F0257B013200FCBBAA /* AnswersView.swift in Sources */,
+				299FE5EB2581CED600297A7F /* UIStackView+Extension.swift in Sources */,
 				29D640CF257AE7ED00AB6F19 /* HiraganaManager.swift in Sources */,
 				299BCA06257B01AD00FCBBAA /* HighScoreViewController.swift in Sources */,
 			);
